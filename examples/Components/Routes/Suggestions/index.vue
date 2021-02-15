@@ -236,7 +236,7 @@ export default {
       }
 
       // ref: https://atomiks.github.io/tippyjs/v6/all-props/
-      this.popup = tippy('.page', {
+      this.popup = tippy('.editor', { //this should be .editor not .page where is the .page came from
         getReferenceClientRect: () => boundingClientRect,
         appendTo: () => document.body,
         interactive: true,
